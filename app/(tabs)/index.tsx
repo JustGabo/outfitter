@@ -1,34 +1,45 @@
-import { Ionicons } from '@expo/vector-icons';
-import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { CreateInput } from '../../components/CreateInput';
+import { Ionicons } from "@expo/vector-icons";
+import {
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import { CreateInput } from "../../components/CreateInput";
 
 const outfits = [
   {
     id: 1,
-    title: 'Blue shirt aesthetic style',
-    image: require('../../assets/images/mock/MockImage.jpeg'),
+    title: "Blue shirt aesthetic style",
+    image: require("../../assets/images/mock/MockImage.jpeg"),
   },
   {
     id: 2,
-    title: 'Blue shirt aesthetic style',
-    image: require('../../assets/images/mock/MockImage.jpeg'),
-  },  
+    title: "Blue shirt aesthetic style",
+    image: require("../../assets/images/mock/MockImage.jpeg"),
+  },
   {
     id: 3,
-    title: 'Blue shirt aesthetic style',
-    image: require('../../assets/images/mock/MockImage.jpeg'),
+    title: "Blue shirt aesthetic style",
+    image: require("../../assets/images/mock/MockImage.jpeg"),
   },
   {
     id: 4,
-    title: 'Blue shirt aesthetic style',
-    image: require('../../assets/images/mock/MockImage.jpeg'),
+    title: "Blue shirt aesthetic style",
+    image: require("../../assets/images/mock/MockImage.jpeg"),
   },
 ];
 
 export default function HomePage() {
+
   return (
     <View style={styles.container}>
-      <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
+      <ScrollView
+        style={styles.scrollView}
+        contentContainerStyle={styles.scrollContent}
+      >
         {/* Header */}
         <View style={styles.header}>
           <Text style={styles.title}>Home</Text>
@@ -55,7 +66,7 @@ export default function HomePage() {
       </ScrollView>
 
       {/* Bottom Actions */}
-      <CreateInput 
+      <CreateInput
         onAddImages={() => {
           // Handle add images
         }}
@@ -70,7 +81,7 @@ export default function HomePage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
   },
   scrollView: {
     flex: 1,
@@ -79,36 +90,36 @@ const styles = StyleSheet.create({
     paddingTop: 70,
   },
   header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     paddingHorizontal: 16,
     paddingBottom: 16,
   },
   title: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   headerIcons: {
-    flexDirection: 'row',
+    flexDirection: "row",
     gap: 16,
   },
   iconButton: {
     padding: 4,
   },
   grid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    flexWrap: "wrap",
     padding: 8,
     gap: 8,
   },
   outfitCard: {
-    width: '48%',
+    width: "48%",
     marginBottom: 16,
     borderRadius: 8,
   },
   outfitImage: {
-    width: '100%',
+    width: "100%",
     height: 225,
     borderRadius: 8,
   },
@@ -124,8 +135,8 @@ const styles = StyleSheet.create({
     marginHorizontal: 8,
   },
   caption: {
-    textAlign: 'center',
-    color: '#666',
+    textAlign: "center",
+    color: "#666",
     marginVertical: 16,
   },
 });

@@ -36,7 +36,7 @@ export default function OutfitPage() {
 
       <View style={styles.imageContainer}>
         <Image
-          source={{ uri: 'https://placeholder.com/400x500' }}
+          source={require('../../assets/images/mock/MockImage.jpeg')}
           style={styles.mainImage}
         />
         <View style={styles.imagePagination}>
@@ -78,10 +78,12 @@ const styles = StyleSheet.create({
   imageContainer: {
     width: '100%',
     aspectRatio: 3/4,
+    paddingHorizontal: 16,
     position: 'relative',
   },
   mainImage: {
     width: '100%',
+    borderRadius: 16,
     height: '100%',
     resizeMode: 'cover',
   },

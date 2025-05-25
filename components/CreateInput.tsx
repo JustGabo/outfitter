@@ -27,17 +27,17 @@ export function CreateInput({ onAddImages }: CreateInputProps) {
             onChangeText={setDescription}
         />
       <View style={styles.actionContainer}>
-        <TouchableOpacity style={styles.addButton} onPress={onAddImages}>
-          <Ionicons name="images-outline" size={12} color="black" />
-          <Text style={styles.buttonText}>Add images</Text>
-        </TouchableOpacity>
+      <TouchableOpacity style={styles.addButton} onPress={onAddImages}>
+        <Ionicons name="images-outline" size={12} color="black" />
+        <Text style={styles.buttonText}>Add images</Text>
+      </TouchableOpacity>
         <TouchableOpacity 
           style={[styles.createButton, !description.trim() && styles.createButtonDisabled]} 
           onPress={handleCreateOutfit}
           disabled={!description.trim()}
         >
-          <Text style={styles.createButtonText}>Create outfit</Text>
-        </TouchableOpacity>
+        <Text style={styles.createButtonText}>Create outfit</Text>
+      </TouchableOpacity>
       </View>
     </View>
   );

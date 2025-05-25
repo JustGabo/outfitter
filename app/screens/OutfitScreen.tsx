@@ -36,7 +36,7 @@ export default function OutfitScreen() {
 
       <View style={styles.imageContainer}>
         <Image
-          source={{ uri: 'https://placeholder.com/400x500' }}
+          source={require('../../assets/images/mock/MockImage.jpeg')}
           style={styles.mainImage}
         />
         <View style={styles.imagePagination}>
